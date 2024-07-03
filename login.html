@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            background-image: url('img.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.116); /* Background color with opacity */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        form {
+            max-width: 300px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1></h1>
+        <h2>Login</h2>
+        <form id="loginForm" method="POST" action="http://localhost:2520">
+            <div>
+                <label for="name">Username:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <br/>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <br/><br/>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+        <p>Don't have an account? <a href="signin.html">Sign up</a></p>
+    </div>
+</body>
+</html>
